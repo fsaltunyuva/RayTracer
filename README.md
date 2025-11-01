@@ -1,8 +1,6 @@
 # Ray Tracer
 
-Development journey blog can be found [in my github.io page](https://fsaltunyuva.github.io/).
-
-To build and run the project, make sure you have a C++ compiler installed. Then, follow these steps:
+Development journey blog can be found [in my github.io page](https://fsaltunyuva.github.io/). To build and run the project, make sure you have a C++ compiler installed. Then, follow these steps:
 
 ```bash
  make
@@ -11,7 +9,8 @@ To build and run the project, make sure you have a C++ compiler installed. Then,
 
 Example input files are provided in the [`Scenes`](https://github.com/fsaltunyuva/RayTracer/tree/main/Scenes) directory. You can specify any of these files as the input to see different rendered scenes.
 
-Rendering times may vary depending on the complexity of the scene and your hardware capabilities.
+> [!WARNING]
+> Rendering times may vary depending on the complexity of the scene and your hardware capabilities.
 
 ### Part 1 - Recursive Ray Tracing
 This part implements basic ray tracing features, including:
