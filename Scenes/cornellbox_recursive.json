@@ -1,0 +1,137 @@
+{
+  "Scene": {
+    "MaxRecursionDepth": "6",
+    "BackgroundColor": "0 0 0",
+    "Cameras": {
+      "Camera": {
+        "_id": "1",
+        "Position": "0 0 20",
+        "Gaze": "0 0 -1",
+        "Up": "0 1 0",
+        "NearPlane": "-10 10 -10 10",
+        "NearDistance": "10",
+        "ImageResolution": "800 800",
+        "ImageName": "cornellbox_recursive.png"
+      }
+    },
+    "Lights": {
+      "AmbientLight": "20 20 20",
+      "PointLight": {
+        "_id": "1",
+        "Position": "0 4 2",
+        "Intensity": "350000 350000 350000"
+      }
+    },
+    "Materials": {
+      "Material": [
+        {
+          "_id": "1",
+          "AmbientReflectance": "1 1 1",
+          "DiffuseReflectance": "0.08 0.08 0.08",
+          "SpecularReflectance": "0 0 0"
+        },
+        {
+          "_id": "2",
+          "AmbientReflectance": "1 0 0",
+          "DiffuseReflectance": "0.1 0 0",
+          "SpecularReflectance": "0 0 0"
+        },
+        {
+          "_id": "3",
+          "AmbientReflectance": "0 0 1",
+          "DiffuseReflectance": "0 0 0.1",
+          "SpecularReflectance": "0 0 0"
+        },
+        {
+          "_id": "4",
+          "AmbientReflectance": "1 1 1",
+          "DiffuseReflectance": "0.08 0.08 0.01",
+          "SpecularReflectance": "1 1 1",
+          "PhongExponent": "300"
+        },
+        {
+          "_id": "5",
+          "_type": "conductor",
+          "AmbientReflectance": "0 0 0",
+          "DiffuseReflectance": "0 0 0",
+          "SpecularReflectance": "0 0 0",
+          "MirrorReflectance": "1 0.86 0.57",
+          "RefractionIndex": "0.370",
+          "AbsorptionIndex": "2.820"
+        },
+        {
+          "_id": "6",
+          "_type": "dielectric",
+          "AmbientReflectance": "0 0 0",
+          "DiffuseReflectance": "0 0 0",
+          "SpecularReflectance": "0 0 0",
+          "MirrorReflectance": "1 1 1",
+          "AbsorptionCoefficient": "0.01 0.01 0.01",
+          "RefractionIndex": "1.55"
+        }
+      ]
+    },
+    "VertexData": {
+      "_data": "-10 -10 10 10 -10 10 10 10 10 -10 10 10 -10 -10 -10 10 -10 -10 10 10 -10 -10 10 -10 5 -6 1 -5 -6 -5",
+      "_type": "xyz"
+    },
+    "Objects": {
+      "Mesh": [
+        {
+          "_id": "1",
+          "Material": "1",
+          "Faces": {
+            "_data": "1 2 6 6 5 1",
+            "_type": "triangle"
+          }
+        },
+        {
+          "_id": "2",
+          "Material": "1",
+          "Faces": {
+            "_data": "5 6 7 7 8 5",
+            "_type": "triangle"
+          }
+        },
+        {
+          "_id": "3",
+          "Material": "1",
+          "Faces": {
+            "_data": "7 3 4 4 8 7",
+            "_type": "triangle"
+          }
+        },
+        {
+          "_id": "4",
+          "Material": "2",
+          "Faces": {
+            "_data": "8 4 1 8 1 5",
+            "_type": "triangle"
+          }
+        },
+        {
+          "_id": "5",
+          "Material": "3",
+          "Faces": {
+            "_data": "2 3 7 2 7 6",
+            "_type": "triangle"
+          }
+        }
+      ],
+      "Sphere": [
+        {
+          "_id": "1",
+          "Material": "6",
+          "Center": "9",
+          "Radius": "4"
+        },
+        {
+          "_id": "2",
+          "Material": "5",
+          "Center": "10",
+          "Radius": "4"
+        }
+      ]
+    }
+  }
+}
