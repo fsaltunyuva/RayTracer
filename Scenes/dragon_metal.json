@@ -1,0 +1,122 @@
+{
+  "Scene": {
+    "BackgroundColor": "0 0 0",
+    "MaxRecursionDepth": "6",
+    "Cameras": {
+      "Camera": {
+        "_id": "1",
+        "_type": "lookAt",
+        "Position": "500 -100 300",
+        "GazePoint": "0 100 -60",
+        "Up": "0 0 1",
+        "FovY": "32",
+        "NearDistance": "1",
+        "ImageResolution": "1920 1152",
+        "ImageName": "dragon_metal.png"
+      }
+    },
+    "Lights": {
+      "AmbientLight": "25 25 25",
+      "PointLight": [
+        {
+          "_id": "1",
+          "Position": "400 100 200",
+          "Intensity": "10000000 10000000 10000000"
+        },
+        {
+          "_id": "2",
+          "Position": "600 -200 200",
+          "Intensity": "10000000 10000000 10000000"
+        }
+      ]
+    },
+    "Transformations": {
+      "Translation": [
+        {
+          "_data": "0 0 -44",
+          "_id": "1"
+        },
+        {
+          "_data": "-60 -60 0",
+          "_id": "2"
+        },
+        {
+          "_data": "110 110 0",
+          "_id": "3"
+        }
+      ],
+      "Rotation": {
+        "_data": "-53 0 1 0",
+        "_id": "1"
+      }
+    },
+    "VertexData": {
+      "_data": "-1000 -1000 0 1000 -1000 0 1000 1000 0 -1000 1000 0",
+      "_type": "xyz"
+    },
+    "Materials": {
+      "Material": [
+        {
+          "_id": "1",
+          "AmbientReflectance": "1 1 1",
+          "DiffuseReflectance": "0.66 0.33 1",
+          "SpecularReflectance": "1 1 1",
+          "PhongExponent": "1"
+        },
+        {
+          "_id": "2",
+          "AmbientReflectance": "0 0 0",
+          "DiffuseReflectance": "0.1 0.1 0.1",
+          "SpecularReflectance": "0 0 0",
+          "PhongExponent": "0"
+        },
+        {
+          "_id": "3",
+          "_type": "conductor",
+          "AmbientReflectance": "0 0 0",
+          "DiffuseReflectance": "0 0 0",
+          "SpecularReflectance": "1 1 1",
+          "PhongExponent": "10",
+          "MirrorReflectance": "0.77 0.78 0.78",
+          "RefractionIndex": "0.135",
+          "AbsorptionIndex": "3.985"
+        },
+        {
+          "_id": "4",
+          "AmbientReflectance": "1 1 1",
+          "DiffuseReflectance": "1 1 1",
+          "SpecularReflectance": "1 1 1",
+          "PhongExponent": "1"
+        }
+      ]
+    },
+    "Objects": {
+      "Mesh": [
+        {
+          "_id": "1",
+          "Material": "1",
+          "Transformations": "r1 t2",
+          "Faces": {
+            "_plyFile": "ply/dragon_remeshed_fixed.ply"
+          }
+        },
+        {
+          "_id": "3",
+          "Material": "4",
+          "Transformations": "t1",
+          "Faces": {
+            "_data": "1 2 3 3 4 1",
+            "_type": "triangle"
+          }
+        }
+      ],
+      "MeshInstance": {
+        "_id": "2",
+        "_baseMeshId": "1",
+        "_resetTransform": "true",
+        "Material": "3",
+        "Transformations": "r1 t3"
+      }
+    }
+  }
+}

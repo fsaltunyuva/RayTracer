@@ -26,5 +26,13 @@ This part implements basic ray tracing features, including:
 
 This part's development blog can be found [here](https://fsaltunyuva.github.io/ray-tracing/graphics/adventure/2025/10/12/Ray-Tracing-Adventure.html).
 
+### Part 1 - Acceleration Structures, Transformations, and Mesh Instances
+- Transformations (translation, scaling, rotation)
+- Mesh Instancing
+- Bounding Volume Hierarchies (BVH)
+- Look At Camera
+
+This part's development blog can be found [here](https://fsaltunyuva.github.io/ray-tracing/graphics/adventure/2025/11/11/Ray-Tracing-Adventure.html).
+
 > [!NOTE]
-> Used libraries are: [json library](https://github.com/nlohmann/json?tab=readme-ov-file#license), [stb](https://github.com/nothings/stb), and [Happly](https://github.com/nmwsharp/happly).
+> Used libraries are: [json library](https://github.com/nlohmann/json?tab=readme-ov-file#license), [stb](https://github.com/nothings/stb), [Happly](https://github.com/nmwsharp/happly), [glm](https://github.com/g-truc/glm), and [FFmpeg](https://ffmpeg.org/).

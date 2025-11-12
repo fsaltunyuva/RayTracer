@@ -1,0 +1,175 @@
+{
+  "Scene": {
+    "BackgroundColor": "0 0 0",
+    "ShadowRayEpsilon": "1e-3",
+    "IntersectionTestEpsilon": "1e-6",
+    "MaxRecursionDepth": "6",
+    "Cameras": {
+      "Camera": {
+        "_id": "1",
+        "Position": "0 2 6",
+        "Gaze": "0 0 -1",
+        "Up": "0 1 0",
+        "NearPlane": "-1 1 -1 1",
+        "NearDistance": "2",
+        "ImageResolution": "800 800",
+        "ImageName": "mirror_room.png"
+      }
+    },
+    "Lights": {
+      "AmbientLight": "50 50 50",
+      "PointLight": [ 
+        {
+          "_id": "1",
+          "Position": "-2 5 2",
+          "Intensity": "4000 4000 4000"
+        },
+        {
+          "_id": "2",
+          "Position": "1 6 4",
+          "Intensity": "3000 3000 3000"
+        },
+        {
+          "_id": "3",
+          "Position": "-1 2 6",
+          "Intensity": "2000 2000 2000"
+        }
+      ]
+    },
+    "Materials": {
+      "Material": [
+        {
+          "_id": "1",
+          "_type": "mirror",
+          "AmbientReflectance": "0 0 0",
+          "DiffuseReflectance": "0.3 0.3 0.3",
+          "SpecularReflectance": "1 1 1",
+          "MirrorReflectance": "0.6 0.6 0.6",
+          "PhongExponent": "100"
+        },
+        {
+          "_id": "2",
+          "AmbientReflectance": "0.48 0.85 0.58",
+          "DiffuseReflectance": "0.56 1 0.68",
+          "SpecularReflectance": "0.75 0.75 0.75",
+          "PhongExponent": "100"
+        },
+        {
+          "_id": "3",
+          "AmbientReflectance": "0.48 0.66 0.90",
+          "DiffuseReflectance": "0.53 0.73 1",
+          "SpecularReflectance": "0.75 0.75 0.75",
+          "PhongExponent": "100"
+        }
+      ]
+    },
+    "Transformations": {
+      "Scaling": {
+        "_data": "1 -1 1",
+        "_id": "1"
+      },
+      "Rotation": [
+        {
+          "_data": "-90 0 0 1",
+          "_id": "1"
+        },
+        {
+          "_data": "90 0 0 1",
+          "_id": "2"
+        },
+        {
+          "_data": "90 1 0 0",
+          "_id": "3"
+        }
+      ],
+      "Translation": [
+        {
+          "_data": "0 1 0",
+          "_id": "1"
+        },
+        {
+          "_data": "-1 0 -1.5",
+          "_id": "2"
+        },
+        {
+          "_data": "1.5 0 0",
+          "_id": "3"
+        },
+        {
+          "_data": "-3 0 0",
+          "_id": "4"
+        },
+        {
+          "_data": "3 0 0",
+          "_id": "5"
+        },
+        {
+          "_data": "0 0 -4",
+          "_id": "6"
+        },
+        {
+          "_data": "0 6 0",
+          "_id": "7"
+        }
+      ]
+    },
+    "VertexData": {
+      "_data": "0 0 0",
+      "_type": "xyz"
+    },
+    "Objects": {
+      "Plane": [
+        {
+          "_id": "1",
+          "Material": "1",
+          "Point": "1",
+          "Normal": "0 1 0"
+        },
+        {
+          "_id": "2",
+          "Material": "1",
+          "Point": "1",
+          "Normal": "0 1 0",
+          "Transformations": "r1 t4"
+        },
+        {
+          "_id": "3",
+          "Material": "1",
+          "Point": "1",
+          "Normal": "0 1 0",
+          "Transformations": "r2 t5"
+        },
+        {
+          "_id": "4",
+          "Material": "1",
+          "Point": "1",
+          "Normal": "0 1 0",
+          "Transformations": "r3 t6"
+        },
+        {
+          "_id": "5",
+          "Material": "1",
+          "Point": "1",
+          "Normal": "0 1 0",
+          "Transformations": "s1 t7"
+        }
+      ],
+      "Sphere": [
+        {
+          "_id": "1",
+          "Material": "2",
+          "Center": "1",
+          "Radius": "1",
+          "Transformations": "t1 t2"
+        },
+        {
+          "_id": "1",
+          "Material": "3",
+          "Center": "1",
+          "Radius": "1",
+          "Transformations": "t1 t3"
+        }
+      ]
+    }
+  }
+}
