@@ -1,0 +1,206 @@
+{
+  "Scene": {
+    "MaxRecursionDepth": "4",
+    "BackgroundColor": "0 0 0",
+    "Cameras": {
+      "Camera": {
+        "_id": "1",
+        "Position": "0 0 20",
+        "Gaze": "0 0 -1",
+        "Up": "0 1 0",
+        "NearPlane": "-10 10 -10 6",
+        "NearDistance": "10.01",
+        "ImageResolution": "750 600",
+        "NumSamples": "900",
+        "ImageName": "cornellbox_boxes_dynamic.png"
+      }
+    },
+    "Lights": {
+      "AmbientLight": "20 20 20",
+      "PointLight": {
+        "_id": "1",
+        "Position": "0 5.9 6",
+        "Intensity": "250000 250000 250000"
+      }
+    },
+    "Materials": {
+      "Material": [
+        {
+          "_id": "1",
+          "AmbientReflectance": "0 0 0",
+          "DiffuseReflectance": "0.1 0.1 0.1",
+          "SpecularReflectance": "0 0 0"
+        },
+        {
+          "_id": "2",
+          "AmbientReflectance": "0 0 0",
+          "DiffuseReflectance": "0.146 0.020 0.018",
+          "SpecularReflectance": "0 0 0"
+        },
+        {
+          "_id": "3",
+          "AmbientReflectance": "0 0 0",
+          "DiffuseReflectance": "0.054 0.096 0.136",
+          "SpecularReflectance": "0 0 0"
+        },
+        {
+          "_id": "4",
+          "AmbientReflectance": "1 1 1",
+          "DiffuseReflectance": "1 1 1",
+          "SpecularReflectance": "0 0 0"
+        },
+        {
+          "_id": "5",
+          "AmbientReflectance": "1 1 1",
+          "DiffuseReflectance": "0.160 0.146 0.02",
+          "SpecularReflectance": "1 1 1",
+          "PhongExponent": "300"
+        },
+        {
+          "_id": "6",
+          "_type": "mirror",
+          "AmbientReflectance": "1 1 1",
+          "DiffuseReflectance": "0.083 0.079 0.075",
+          "SpecularReflectance": "0.0 0.0 0.0",
+          "MirrorReflectance": "1 1 1"
+        }
+      ]
+    },
+    "Transformations": {
+      "Translation": [
+        {
+          "_data": "0 -6 0",
+          "_id": "1"
+        },
+        {
+          "_data": "0 6 0",
+          "_id": "2"
+        },
+        {
+          "_data": "0 -6 0",
+          "_id": "3"
+        },
+        {
+          "_data": "0 5.999 -1",
+          "_id": "4"
+        },
+        {
+          "_data": "1 -10 -5",
+          "_id": "5"
+        },
+        {
+          "_data": "-9 -10 -5",
+          "_id": "6"
+        },
+        {
+          "_data": "-0.5 -0.5 -0.5",
+          "_id": "7"
+        },
+        {
+          "_data": "0.5 0.5 0.5",
+          "_id": "8"
+        }
+      ],
+      "Scaling": [
+        {
+          "_data": "3 0.1 0.1",
+          "_id": "1"
+        },
+        {
+          "_data": "0.2 0.2 0.2",
+          "_id": "2"
+        },
+        {
+          "_data": "7 13 7",
+          "_id": "3"
+        },
+        {
+          "_data": "7 7 7",
+          "_id": "4"
+        }
+      ],
+      "Rotation": [
+        {
+          "_data": "45 0 1 0",
+          "_id": "1"
+        },
+        {
+          "_data": "0 0 1 0",
+          "_id": "2"
+        }
+      ]
+    },
+    "VertexData": {
+      "_data": "-10 -10 10 10 -10 10 10 6 10 -10 6 10 -10 -10 -10 10 -10 -10 10 6 -10 -10 6 -10 5 -6 1 -5 -6 -5 0 6 0",
+      "_type": "xyz"
+    },
+    "Objects": {
+      "Mesh": [
+        {
+          "_id": "1",
+          "Material": "1",
+          "Faces": {
+            "_data": "1 2 6 6 5 1",
+            "_type": "triangle"
+          }
+        },
+        {
+          "_id": "2",
+          "Material": "1",
+          "Faces": {
+            "_data": "5 6 7 7 8 5",
+            "_type": "triangle"
+          }
+        },
+        {
+          "_id": "3",
+          "Material": "1",
+          "Faces": {
+            "_data": "7 3 4 4 8 7",
+            "_type": "triangle"
+          }
+        },
+        {
+          "_id": "4",
+          "Material": "2",
+          "Faces": {
+            "_data": "8 4 1 8 1 5",
+            "_type": "triangle"
+          }
+        },
+        {
+          "_id": "5",
+          "Material": "3",
+          "Faces": {
+            "_data": "2 3 7 2 7 6",
+            "_type": "triangle"
+          }
+        },
+        {
+          "_id": "6",
+          "Material": "1",
+          "Faces": {
+            "_data": "1 3 2 3 1 4",
+            "_type": "triangle"
+          }
+        },
+        {
+          "_id": "7",
+          "Material": "6",
+          "Faces": {
+            "_plyFile": "ply/cube.ply"
+          },
+          "Transformations": "t7 r1 t8 s3 t5"
+        }
+      ],
+      "MeshInstance": {
+        "_id": "8",
+        "_baseMeshId": "7",
+        "_resetTransform": "true",
+        "Material": "5",
+        "Transformations": "t7 r2 t8 s4 t6",
+        "MotionBlur": "0 0 4"
+      }
+    }
+  }
+}
