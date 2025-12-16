@@ -44,4 +44,4 @@ This part's development blog can be found [here](https://fsaltunyuva.github.io/r
 This part's development blog can be found [here](https://fsaltunyuva.github.io/ray-tracing/graphics/adventure/2025/11/24/Ray-Tracing-Adventure.html).
 
 > [!NOTE]
-> Used libraries are: [json library](https://github.com/nlohmann/json?tab=readme-ov-file#license), [stb](https://github.com/nothings/stb), [Happly](https://github.com/nmwsharp/happly), [glm](https://github.com/g-truc/glm), and [FFmpeg](https://ffmpeg.org/).
+> Used libraries are: [json library](https://github.com/nlohmann/json?tab=readme-ov-file#license), [stb](https://github.com/nothings/stb), [Happly](https://github.com/nmwsharp/happly), [glm](https://github.com/g-truc/glm), and [FFmpeg](https://ffmpeg.org/). Also I used [this Python script](https://github.com/fsaltunyuva/FramesToVideo) to generate videos from renders.
