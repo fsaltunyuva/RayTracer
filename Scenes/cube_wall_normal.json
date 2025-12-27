@@ -1,0 +1,140 @@
+{
+  "Scene": {
+    "MaxRecursionDepth": "3",
+    "BackgroundColor": "0 0 0",
+    "Cameras": {
+      "Camera": {
+        "_id": "1",
+        "_type": "lookAt",
+        "Position": "3 3 3",
+        "GazePoint": "0 0 0",
+        "Up": "0 1 0",
+        "FovY": "25",
+        "NearDistance": "1",
+        "ImageResolution": "800 800",
+        "ImageName": "cube_wall_normal.png",
+        "NumSamples": "1"
+      }
+    },
+    "Lights": {
+      "AmbientLight": "20 20 20",
+      "PointLight": [
+        {
+          "_id": "1",
+          "Position": "4 4 2",
+          "Intensity": "10000 10000 10000"
+        },
+        {
+          "_id": "2",
+          "Position": "-4 -4 2",
+          "Intensity": "10000 10000 10000"
+        }
+      ]
+    },
+    "Materials": {
+      "Material": {
+        "_id": "1",
+        "AmbientReflectance": "0 0 0",
+        "DiffuseReflectance": "0.5 0.5 0.5",
+        "SpecularReflectance": "0.3 0.3 0.3",
+        "PhongExponent": "100"
+      }
+    },
+    "Textures": {
+      "Images": {
+        "Image": [
+          {
+            "_data": "textures/wall.png",
+            "_id": "1"
+          },
+          {
+            "_data": "textures/wall_normal.png",
+            "_id": "2"
+          }
+        ]
+      },
+      "TextureMap": [
+        {
+          "_id": "1",
+          "_type": "image",
+          "ImageId": "1",
+          "DecalMode": "replace_kd",
+          "Interpolation": "bilinear"
+        },
+        {
+          "_id": "2",
+          "_type": "image",
+          "ImageId": "2",
+          "DecalMode": "replace_normal",
+          "Interpolation": "bilinear"
+        }
+      ]
+    },
+    "VertexData": {
+      "_data": "0 0 0 1 0 0 1 1 0 0 1 0 0 0 1 1 0 1 1 1 1 0 1 1 0 0 0 1 0 0 1 1 0 0 1 0 0 0 1 1 0 1 1 1 1 0 1 1 0 0 0 1 0 0 1 1 0 0 1 0 0 0 1 1 0 1 1 1 1 0 1 1",
+      "_type": "xyz"
+    },
+    "TexCoordData": {
+      "_data": "1 1 0 1 0 0 1 0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 0 1 0 1 1 0 1 0 1 1 1 1 0 0 0 1 1 0 1 0 0 1 0",
+      "_type": "uv"
+    },
+    "Objects": {
+      "Mesh": [
+        {
+          "_id": "1",
+          "Material": "1",
+          "Textures": "1 2",
+          "Faces": {
+            "_data": "1 3 2 1 4 3",
+            "_type": "triangle"
+          }
+        },
+        {
+          "_id": "2",
+          "Material": "1",
+          "Textures": "1 2",
+          "Faces": {
+            "_data": "8 5 7 7 5 6",
+            "_type": "triangle"
+          }
+        },
+        {
+          "_id": "3",
+          "Material": "1",
+          "Textures": "1 2",
+          "Faces": {
+            "_data": "13 9 14 14 9 10",
+            "_type": "triangle"
+          }
+        },
+        {
+          "_id": "4",
+          "Material": "1",
+          "Textures": "1 2",
+          "Faces": {
+            "_data": "12 16 15 12 15 11",
+            "_type": "triangle"
+          }
+        },
+        {
+          "_id": "5",
+          "Material": "1",
+          "Textures": "1 2",
+          "Faces": {
+            "_data": "21 24 17 17 24 20",
+            "_type": "triangle"
+          }
+        },
+        {
+          "_id": "6",
+          "Material": "1",
+          "Textures": "1 2",
+          "Faces": {
+            "_data": "23 22 18 19 23 18",
+            "_type": "triangle"
+          }
+        }
+      ]
+    }
+  }
+}
